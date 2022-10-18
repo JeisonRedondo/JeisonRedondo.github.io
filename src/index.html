@@ -1,30 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebPage JeisonRedondo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header>
-        <div>
-            <p>Aca ira mi foto con datos</p>
-        </div>
-        <div>
-            Aca colocare una descripción adecuada de mi.
-        </div>
+        <section class="header-container">
+            <div class="header-container__logo">
+                <figure class="logo--photo">
+                    <img src="./JeisonPhoto.png" id="logo-jei" alt="">
+                </figure>
+                <h1>Jeison David 
+                    Redondo Laiton</h1>
+            </div>
+
+            <ul class="header-container__nav-list">
+                <li>LinkIn</li>
+                <li>Github</li>
+                <li>Twiter</li>
+                
+            </ul>
+        </section>
     </header>
+
     <main>
-        <section>
-            <p>esta sera la seccción donde colocare los cursos que he tomado.</p>
+        <section class="main__courses-container">
+            <h2>My Courses(Provisional)</h2>
+            <u class="main__courses-container__list">
+                <li>
+                    <img src="./logo-mision.png" alt="logo Mision TIC 2022" id="mision-icon">
+                    <a href="">Diploma in Programming <br>Skills with a Emphasis on <br>Web Skills</a>
+                </li>
+                <li>
+                    <img src="" alt="Course of Git" id="mision-icon">
+                    <a href=""> Profesional Course of Git<br> and Github</a>
+                </li>
+                <li>
+                    <img src="" alt="Course of HTML & CSS" id="mision-icon">
+                    <a href=""> Profesional Course of HTML & CSS</a>
+                </li>
+            </u>
         </section>
-        <section>
-            Aca ira la presentación de todos mis proyectos terminados.
+        <section class="main__proyects-container">
+            <div class="main__proyects-container--proyect">
+                <figure class="proyect--proyectImage">
+                    <img src="./frontend-icon.png" alt="">
+                </figure>
+                <a href="">Link del proyecto</a>
+                <p>Descripción del Proyecto</p>
+            </div>
+            <div class="main__proyects-container--proyect">
+                <figure class="proyect--proyectImage">
+                    <img src="./frontend-icon.png" alt="">
+                </figure>
+                <a href="">Link del proyecto</a>
+                <p>Descripción del Proyecto</p>
+            </div>
+            <div class="main__proyects-container--proyect">
+                <figure class="proyect--proyectImage">
+                    <img src="./frontend-icon.png" alt="">
+                </figure>
+                <a href="">Link del proyecto</a>
+                <p>Descripción del Proyecto</p>
+            </div>
         </section>
-        <section>
-            <p>Aca ubicare las paginas que uso como recurso para trabajar.</p>
+        <section class="main__resources-container">
+            <ul class="main__resources-container--list">
+                <li><a href="">Link de Pagina<span>🧊</span></a></li>
+                <li><a href="">Link de Pagina<span>🧊</span></a></li>
+                <li><a href="">Link de Pagina<span>🧊</span></a></li>
+                <li><a href="">Link de Pagina<span>🧊</span></a></li>
+            </ul>
         </section>
     </main>
 </body>
