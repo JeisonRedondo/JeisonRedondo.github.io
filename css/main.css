@@ -24,12 +24,6 @@ html {
 
 body {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-
-
     font-size: 1.8rem;
     background-color: var(--background-color);
 }
@@ -50,15 +44,12 @@ li {
 .header-container {
     width: calc(100% - 30px);
     height: auto;
-    margin: 10px auto;
+    margin: 10px 20px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     justify-items: center;
 
-    /* background-color: var(--Inner-color); */
-    /* box-shadow: 10px 10px 5px var(--Middle-color); */
     background: rgb(0, 0, 0);
     background: linear-gradient(121deg, rgba(0, 0, 0, 1) 42%, rgba(57, 3, 6, 1) 79%);
     border-radius: 25px;
@@ -67,7 +58,6 @@ li {
 }
 
 .header-container__logo {
-    width: calc(100% - 10px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,10 +77,8 @@ li {
 }
 
 .header-container__logo h1 {
-    width: calc(100% - 10px);
     padding: 20px;
 
-    /* border-left: 10px solid var(--red-color__first); */
     font-weight: 900;
     text-align: center;
     border-radius: 20px;
@@ -98,36 +86,79 @@ li {
 
 }
 
-.header-container ul {
-    list-style: none;
-    margin: 30px 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+.header-container__networks {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    
+}
+
+.networks-links {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    background-color: transparent;
+}
+
+.header-container__networks:hover .networks-links {
+    display: block;
+
+}
+
+.networks-links a {
+    display: block;
+    color: var(--letters-color);
+    background-color: var(--red-color__second);
+    padding: 5px;
+    text-decoration: none;
+}
+
+.networks-links a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+#menuicon{
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+    /* background-image: url("../src/menu-svgrepo-com.svg"); */
+}
+.boton-icon{
+    width: 100px;
+    color: #FFFFFF;
+    background-color: var(--red-color__first);
 }
 
 /*-------------- End__Header -----------*/
+
 /* ++++++++++++++++++++ Main ++++++++++++++++++++++++++ */
+.main-container {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
 .main__courses-container {
-    width: calc(100% - 30px);
-    height: auto;
-    margin: 10px auto;
+
+    width: calc(100% - 20px);
+    margin: 20px auto;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
     justify-items: center;
 
     background: rgb(52, 3, 57);
     background: linear-gradient(121deg, rgba(52, 3, 57, 1) 29%, rgba(0, 0, 0, 1) 59%);
     border-right: 3.6px solid rgb(52, 3, 57, 1);
     border-radius: 15px;
-    overflow: hidden;
-    /* box-shadow: inset 5px 10px 5px var(--red-color__second); */
+    grid-area: one;
 }
 
 .main__courses-container h2 {
+    /* width: 100%; */
     text-align: center;
 }
 
@@ -137,14 +168,22 @@ li {
 
 .main__courses-container__list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .main__courses-container__list li {
-    width: 100%;
+    /* width: 100%; */
     margin: 10px 20px;
+    /* text-rendering: auto; */
+}
+
+.links {
+    text-decoration: none;
 }
 
 .main__proyects-container {
+
     width: calc(100% - 20px);
     margin: 20px auto;
     padding: 10px;
@@ -153,6 +192,7 @@ li {
     background: linear-gradient(121deg, rgba(0, 0, 0, 1) 42%, rgba(10, 57, 3, 1) 79%);
     border-left: 3.6px solid rgb(10, 57, 3, 1);
     border-radius: 25px;
+    grid-area: two;
 }
 
 .main__proyects-container--proyect {
@@ -169,6 +209,7 @@ li {
 }
 
 .main__resources-container {
+
     width: calc(100% - 20px);
     margin: 20px auto;
 
@@ -176,6 +217,7 @@ li {
     background: linear-gradient(37deg, rgba(0, 0, 0, 1) 47%, rgba(35, 10, 223, 1) 100%);
     border-top: 2px solid rgb(35, 10, 223);
     border-radius: 30px;
+    grid-area: three;
 }
 
 .main__resources-container--list {

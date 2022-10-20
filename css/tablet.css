@@ -1,0 +1,10 @@
+.main-container{
+    margin: 10px 20px;
+    display: grid;
+    grid-auto-columns: 250px;
+    grid-template-areas:
+        "one two two"
+        "three three three"
+    ;
+    place-content: center;
+}
