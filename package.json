@@ -1,0 +1,19 @@
+{
+  "name": "jeisonredondo--webpage--",
+  "version": "1.0.0",
+  "description": "My Presentation Page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeisonRedondo/JeisonRedondo.github.io.git"
+  },
+  "author": "Jeison David Redondo Laiton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeisonRedondo/JeisonRedondo.github.io/issues"
+  },
+  "homepage": "https://github.com/JeisonRedondo/JeisonRedondo.github.io#readme"
+}
