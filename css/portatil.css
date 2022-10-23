@@ -1,5 +1,6 @@
+/* ---------------text presentation---------------------- */
 .header-container {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     height: 400px;
     margin: 10px auto;
 
@@ -16,12 +17,11 @@
 }
 
 .logo--photo {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 
     position: absolute;
     top: 10px;
-    left: 35px;
 }
 
 #text-presentation {
@@ -33,7 +33,7 @@
     position: absolute;
     font-size: 3.5rem;
     top: 0;
-    left: 15%;
+    left: 30%;
 
     background: rgb(0, 0, 0);
     background: linear-gradient(198deg, rgba(0, 0, 0, 1) 51%, rgba(31, 2, 6, 1) 86%);
@@ -52,8 +52,8 @@
 .learningPst {
     position: absolute;
     font-size: 3.5rem;
-    top: 61%;
-    left: 50%;
+    top: 81%;
+    left: 60%;
     background: rgb(0, 0, 0);
     background: linear-gradient(198deg, rgba(0, 0, 0, 1) 51%, rgba(31, 2, 6, 1) 86%);
 }
@@ -61,8 +61,8 @@
 .passionPst {
     position: absolute;
     font-size: 3.5rem;
-    top: 60%;
-    left: 15%;
+    top: 80%;
+    left: 30%;
     background: rgb(0, 0, 0);
     background: linear-gradient(198deg, rgba(0, 0, 0, 1) 51%, rgba(31, 2, 6, 1) 86%);
 }
@@ -70,16 +70,16 @@
 .programmingPst {
     position: absolute;
     font-size: 3.5rem;
-    top: 30%;
-    left: 15%;
+    top: 40%;
+    left: 30%;
     background: rgb(0, 0, 0);
     background: linear-gradient(198deg, rgba(0, 0, 0, 1) 51%, rgba(31, 2, 6, 1) 86%);
 }
 
 #logo-button {
     z-index: 2;
-    top: 112%;
-    left: 20%;
+    top: 90%;
+    left: 80%;
 
 }
 
@@ -87,11 +87,11 @@
     display: none;
 }
 
-/* ---------------- Main ------------------------ */
-.main-container{
-    /* margin: 10px 0; */
+/* -------------------------Main------------------------------ */
+.main-container {
+    margin: 10px;
     display: grid;
-    grid-auto-columns: 250px;
+    grid-auto-columns: 1fr;
     grid-template-areas:
         "one two two"
         "three three three"

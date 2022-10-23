@@ -9,7 +9,7 @@
     --red-color__second: #340834;
     --red-color__third: #850a20;
 
-    --letters-color: #088181;
+    --letters-color: #089898;
 
     --background-color: #000000;
     --Middle-color: #555555;
@@ -18,7 +18,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Roboto Slab', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--letters-color);
 }
 
@@ -32,32 +32,28 @@ img {
     width: 100%;
 }
 
-a {
-    text-decoration: none;
-}
-
 li {
     text-decoration: none;
 }
 
 /* --------------------- Header------------------------ */
 .header-container {
-    width: calc(100% - 30px);
+    width: calc(100% - 20px);
     height: auto;
-    margin: 10px 20px;
+    margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     justify-items: center;
 
-    background: rgb(0, 0, 0);
-    background: linear-gradient(121deg, rgba(0, 0, 0, 1) 42%, rgba(57, 3, 6, 1) 79%);
-    border-radius: 25px;
-    border-left: 3.6px solid rgb(57, 3, 6, 1);
-    overflow: hidden;
+    border-radius: 10px;
+    border-left: 3px solid rgb(69, 6, 6);
+    border-bottom: 3px solid rgb(69, 6, 6);
+    /* overflow: hidden; */
 }
 
 .header-container__logo {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,11 +66,14 @@ li {
 
     border-radius: 30px;
     overflow: hidden;
+
 }
 
 #logo-jei {
     width: 100%;
 }
+
+
 
 .header-container__logo h1 {
     padding: 20px;
@@ -82,54 +81,222 @@ li {
     font-weight: 900;
     text-align: center;
     border-radius: 20px;
-    border-bottom: 5px solid var(--red-color__second);
+    border-bottom: 1px solid var(--red-color__second);
 
+}
+
+.header-container__Presentation-text {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 2rem;
+    color: transparent;
+}
+
+.Presentation-text__containerText {
+    padding: 15px;
+    position: relative;
+}
+
+#softwareDevelopment {
+    padding: 2px;
+    font-weight: 600;
+    color: #387a9d;
+}
+
+.developmentPst {
+    padding-left: 5px;
+    position: absolute;
+    font-size: 3.5rem;
+    top: 20%;
+    left: 0;
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(198deg, rgba(0, 0, 0, 1) 51%, rgba(31, 2, 6, 1) 86%);
+}
+
+#jeisonRedondo {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 2px;
+    font-weight: 600;
+    color: rgb(134, 152, 252);
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.jeisonPst {
+    position: absolute;
+    font-size: 2.5rem;
+    top: 0;
+    left: 0;
+}
+
+#learning {
+    padding: 2px;
+    font-weight: 600;
+    color: rgb(141, 174, 213);
+}
+
+.learningPst {
+    position: absolute;
+    font-size: 3.5rem;
+    top: 60%;
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(198deg, rgba(0, 0, 0, 1) 51%, rgba(31, 2, 6, 1) 86%);
+}
+
+#passion {
+    padding: 2px;
+    font-weight: 600;
+    color: rgb(8, 80, 96);
+}
+
+.passionPst {
+    position: absolute;
+    font-size: 3.5rem;
+    top: 75%;
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(198deg, rgba(0, 0, 0, 1) 51%, rgba(31, 2, 6, 1) 86%);
+}
+
+#Programming {
+    padding: 2px;
+    font-weight: 600;
+    color: rgb(56, 99, 111);
+}
+
+.programmingPst {
+    position: absolute;
+    font-size: 3.5rem;
+    top: 45%;
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(198deg, rgba(0, 0, 0, 1) 51%, rgba(31, 2, 6, 1) 86%);
+}
+
+.changeColor {
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-name: slidein;
+}
+
+.seeSpecial {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.muestra {
+    animation-duration: 5s;
+    animation-name: aparecer;
+}
+
+@keyframes slidein {
+    from {
+        color: transparent;
+    }
+
+    to {
+        color: var(--letters-color);
+    }
+}
+
+@keyframes aparecer {
+    0% {
+        display: none;
+    }
+
+    70% {
+        display: inline;
+    }
+}
+
+#logo-button {
+    padding: 5px;
+    position: absolute;
+    z-index: 4;
+    top: 105%;
+    left: 26%;
+
+    color: var(--letters-color);
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid rebeccapurple;
+    border-bottom: 1px solid rebeccapurple;
+    border-radius: 10px;
+}
+
+#logo-button:hover {
+
+    border-right: 3px solid rebeccapurple;
+    border-bottom: 3px solid rebeccapurple;
+    transition: all 0.5s ease;
 }
 
 .header-container__networks {
+    
     display: inline-block;
     position: fixed;
     top: 0;
-    right: 0px;
-    
+    right: 10px;
+
 }
 
 .networks-links {
+    
     display: none;
     position: absolute;
     width: 100%;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
     background-color: transparent;
+    
 }
 
 .header-container__networks:hover .networks-links {
+    
     display: block;
-
 }
 
 .networks-links a {
     display: block;
     color: var(--letters-color);
-    background-color: var(--red-color__second);
+    background-color: transparent;
     padding: 5px;
     text-decoration: none;
 }
 
 .networks-links a:hover {
-    color: #FFFFFF;
-    background-color: #00A4BD;
+    color: #e80c0c;
+
 }
-#menuicon{
-    width: 20px;
+
+#menuicon {
+    width: 100px;
     height: 20px;
     color: #FFFFFF;
-    /* background-image: url("../src/menu-svgrepo-com.svg"); */
 }
-.boton-icon{
-    width: 100px;
-    color: #FFFFFF;
-    background-color: var(--red-color__first);
+
+.boton-icon {
+    width: 80px;
+    height: 30px;
+    text-align: right;
+
+    border: none;
+    left: 0;
+    color: transparent;
+    background-color: transparent;
+    background-image: url('../images/menu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 /*-------------- End__Header -----------*/
@@ -144,7 +311,7 @@ li {
 .main__courses-container {
 
     width: calc(100% - 20px);
-    margin: 20px auto;
+    margin: 80px 0 20px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -152,7 +319,6 @@ li {
 
     background: rgb(52, 3, 57);
     background: linear-gradient(121deg, rgba(52, 3, 57, 1) 29%, rgba(0, 0, 0, 1) 59%);
-    border-right: 3.6px solid rgb(52, 3, 57, 1);
     border-radius: 15px;
     grid-area: one;
 }
@@ -173,9 +339,12 @@ li {
 }
 
 .main__courses-container__list li {
-    /* width: 100%; */
     margin: 10px 20px;
-    /* text-rendering: auto; */
+}
+
+.list_class a{
+    color: #089898;
+    text-decoration: none;
 }
 
 .links {
@@ -190,22 +359,36 @@ li {
 
     background: rgb(0, 0, 0);
     background: linear-gradient(121deg, rgba(0, 0, 0, 1) 42%, rgba(10, 57, 3, 1) 79%);
-    border-left: 3.6px solid rgb(10, 57, 3, 1);
+
     border-radius: 25px;
     grid-area: two;
+}
+
+.main__proyects-container h2 {
+    text-align: center;
+    font-size: 3rem;
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(75, 3, 12, 1) 19%, rgba(78, 3, 13, 1) 85%, rgba(0, 0, 0, 1) 100%);
 }
 
 .main__proyects-container--proyect {
     width: calc(100% - 20px);
     margin: 10px auto;
     padding: 10px;
-
-    background-color: aqua;
     border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .proyect--proyectImage {
-    width: 120px;
+    width: 300px;
+    margin: 20px;
+}
+.proyect__references a {
+    color: rgb(48, 167, 15);
+    text-decoration: none;
 }
 
 .main__resources-container {
@@ -214,8 +397,8 @@ li {
     margin: 20px auto;
 
     background: rgb(0, 0, 0);
-    background: linear-gradient(37deg, rgba(0, 0, 0, 1) 47%, rgba(35, 10, 223, 1) 100%);
-    border-top: 2px solid rgb(35, 10, 223);
+    background: linear-gradient(37deg, rgb(163, 80, 80) 47%, rgb(58, 50, 120) 100%);
+    border-top: 2px solid rgb(48, 38, 127);
     border-radius: 30px;
     grid-area: three;
 }
@@ -232,4 +415,29 @@ li {
 
 .main__resources-container--list li {
     margin: 10px auto;
+}
+.main__resources-container--list li a {
+    color:var(--letters-color);
+    text-decoration: none;
+}
+
+#Linked-icon {
+    color: transparent;
+    background-color: transparent;
+    background-image: url('../images/icons-linkedin.png');
+    background-size: contain;
+}
+
+#Github-icon {
+    color: transparent;
+    background-color: transparent;
+    background-image: url('../images/github.png');
+    background-size: contain;
+}
+
+#Twitter-icon {
+    color: transparent;
+    background-color: transparent;
+    background-image: url('../images/signo-de-twitter.png');
+    background-size: contain;
 }
